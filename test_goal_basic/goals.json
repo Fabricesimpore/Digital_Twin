@@ -1,0 +1,37 @@
+[
+  {
+    "id": "goal_6339131e",
+    "title": "Master Goal-Aware Agent Development",
+    "description": "Build and integrate a complete goal-aware agent system",
+    "goal_type": "project",
+    "target_date": "2025-08-21T15:41:03.289782",
+    "created_date": "2025-07-24T15:41:03.289790",
+    "estimated_duration_weeks": 4.0,
+    "status": "draft",
+    "progress_percentage": 0.0,
+    "measurement_type": "milestone",
+    "parent_goal_id": null,
+    "sub_goal_ids": [],
+    "milestone_ids": [],
+    "motivation": "Transform the twin from reactive to strategic",
+    "success_vision": "A fully functional goal-aware digital assistant",
+    "impact_areas": [
+      "work",
+      "learning",
+      "productivity"
+    ],
+    "priority": 1,
+    "energy_level_required": "medium",
+    "preferred_work_times": [],
+    "success_metrics": [],
+    "risk_factors": [],
+    "mitigation_strategies": [],
+    "lessons_learned": [],
+    "related_apps": [
+      "VS Code",
+      "Terminal",
+      "Chrome"
+    ],
+    "activity_patterns": {}
+  }
+]

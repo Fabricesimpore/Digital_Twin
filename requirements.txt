@@ -1,0 +1,41 @@
+# Digital Twin Brain Module Requirements
+
+# Core dependencies
+openai>=1.0.0          # For GPT-4o API access
+pyyaml>=6.0            # For persona.yaml configuration
+python-dotenv>=1.0.0   # For environment variable management
+
+# Memory and Vector Database
+chromadb>=0.4.0        # Local vector database for memory storage
+sentence-transformers>=2.2.0  # For text embeddings (used by Chroma)
+
+# Optional: Alternative vector databases (uncomment as needed)
+# pinecone-client>=2.2.0  # Cloud vector database alternative
+# weaviate-client>=3.0.0  # Another vector DB option
+
+# Development and testing
+pytest>=7.0.0          # For unit testing
+pytest-asyncio>=0.21.0 # For async test support
+
+# Controller system dependencies
+python-dateutil>=2.8.0     # For date/time parsing
+requests>=2.31.0            # For API calls and HTTP requests
+
+# Voice and telephony (for voice_tool.py)
+twilio>=8.0.0              # For phone call capabilities
+elevenlabs>=0.2.0          # For text-to-speech (optional)
+
+# Task scheduling
+APScheduler>=3.10.0        # Alternative to custom scheduler (optional)
+
+# Future integrations (uncomment when ready to implement)
+# google-api-python-client>=2.0.0  # For Gmail, Calendar integration
+# langchain>=0.1.0          # For agent orchestration
+# pyautogui>=0.9.0          # For desktop automation
+# selenium>=4.0.0           # For browser automation
+# fastapi>=0.100.0          # For building REST API
+# uvicorn>=0.23.0           # For running FastAPI
+
+# Data processing
+pandas>=2.0.0          # For data analysis
+numpy>=1.24.0          # For numerical operations
