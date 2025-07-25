@@ -24,7 +24,7 @@ from digital_twin_v3 import DigitalTwinV3, Situation
 from memory_system.episodic_memory import EpisodicMemorySystem
 from memory_system.vector_memory import EnhancedVectorMemory
 from memory_system.memory_retrieval import IntelligentMemoryRetrieval
-from scheduler import ActionScheduler
+from scheduler import TwinScheduler as ActionScheduler
 
 
 class ActionStatus(Enum):

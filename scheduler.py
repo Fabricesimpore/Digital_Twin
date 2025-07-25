@@ -10,7 +10,7 @@ For production, you might want to use APScheduler or Celery.
 
 import asyncio
 import logging
-from typing import Dict, Callable, Optional, Any
+from typing import Dict, Callable, Optional, Any, List
 from datetime import datetime, timedelta
 from dataclasses import dataclass, field
 from enum import Enum

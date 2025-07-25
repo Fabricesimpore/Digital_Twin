@@ -24,7 +24,7 @@ from dotenv import load_dotenv
 
 from twin_decision_loop import UnifiedTwinDecisionLoop, TwinRequest, TwinResult
 from action_registry import global_action_registry, ActionCategory, ActionUrgency
-from scheduler import ActionScheduler
+from scheduler import TwinScheduler as ActionScheduler
 
 # Load environment variables
 load_dotenv()

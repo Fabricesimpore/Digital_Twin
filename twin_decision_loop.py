@@ -26,7 +26,7 @@ from pathlib import Path
 
 from digital_twin_v3 import DigitalTwinV3, Situation, TwinResponse
 from twin_controller import MemoryAwareController, ActionPlan, ActionResult
-from scheduler import ActionScheduler
+from scheduler import TwinScheduler as ActionScheduler
 
 # Import observer system
 try:

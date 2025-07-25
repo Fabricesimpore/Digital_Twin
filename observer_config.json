@@ -1,0 +1,48 @@
+{
+  "enabled": true,
+  "observers": {
+    "screen_observer": {
+      "enabled": true,
+      "poll_interval": 1.0,
+      "min_duration": 2
+    },
+    "browser_tracker": {
+      "enabled": true,
+      "track_urls": true,
+      "track_tab_switches": true
+    },
+    "input_watcher": {
+      "enabled": true,
+      "idle_threshold": 60,
+      "track_keystroke_patterns": false
+    }
+  },
+  "privacy": {
+    "allow_private": false,
+    "blocked_categories": [
+      "finance"
+    ],
+    "blocked_apps": [
+      "keychain access",
+      "1password"
+    ],
+    "blocked_url_patterns": [
+      ".*bank.*",
+      ".*password.*",
+      ".*login.*\\.aspx"
+    ],
+    "anonymize_sensitive": true,
+    "data_retention_days": 30
+  },
+  "storage": {
+    "local_only": true,
+    "encrypt_logs": true,
+    "max_log_size_mb": 100
+  },
+  "analysis": {
+    "enable_pattern_detection": true,
+    "productivity_analysis": true,
+    "anomaly_detection": true,
+    "habit_tracking": true
+  }
+}

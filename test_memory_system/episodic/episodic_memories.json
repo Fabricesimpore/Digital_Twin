@@ -1,0 +1,54 @@
+{
+  "memories": [
+    {
+      "id": "586e11dc-19ad-489b-8928-9b0ecf82405a",
+      "memory_type": "decision",
+      "timestamp": "2025-07-24T18:52:32.590607",
+      "title": "Decision: Drop current task and address immediately...",
+      "description": "Situation: Client emails asking for urgent project update\nDecision: Drop current task and address immediately\nReasoning: Applied priority_rule rule: client request AND marked urgent",
+      "context": {
+        "reasoning_mode": "heuristic",
+        "confidence": 0.475,
+        "category": "email",
+        "metadata": {
+          "sender": "client@company.com",
+          "urgency": "high"
+        },
+        "state_context": {
+          "current_energy": "medium",
+          "current_stress": "medium",
+          "current_mood": "neutral",
+          "current_focus": "normal",
+          "workload": null,
+          "deadline_pressure": false,
+          "location": null,
+          "time_of_day": 18,
+          "recommendations": []
+        }
+      },
+      "people_involved": [
+        "client@company.com"
+      ],
+      "location": null,
+      "emotional_state": "neutral",
+      "energy_level": "medium",
+      "decision_made": "Drop current task and address immediately",
+      "reasoning": "Applied priority_rule rule: client request AND marked urgent",
+      "outcome": null,
+      "satisfaction": null,
+      "lessons_learned": [],
+      "tags": [
+        "email",
+        "heuristic",
+        "confidence_4"
+      ],
+      "related_memories": [],
+      "importance": "low",
+      "confidence": 0.8,
+      "last_accessed": null,
+      "access_count": 0
+    }
+  ],
+  "last_updated": "2025-07-24T18:52:32.590750",
+  "total_count": 1
+}

@@ -1,0 +1,126 @@
+{
+  "heuristics": [
+    {
+      "id": "morning_urgent_email",
+      "rule_type": "time_based",
+      "condition": "urgent email AND time < 10:00",
+      "action": "Respond immediately with brief acknowledgment and action plan",
+      "confidence": 0.9,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106927"
+    },
+    {
+      "id": "evening_non_urgent",
+      "rule_type": "time_based",
+      "condition": "non-urgent request AND time > 18:00",
+      "action": "Acknowledge receipt and defer to tomorrow",
+      "confidence": 0.8,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106928"
+    },
+    {
+      "id": "lunch_meeting_request",
+      "rule_type": "time_based",
+      "condition": "meeting request AND time 12:00-13:00",
+      "action": "Suggest alternative time to protect lunch break",
+      "confidence": 0.85,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106929"
+    },
+    {
+      "id": "client_urgent_escalate",
+      "rule_type": "priority_rule",
+      "condition": "client request AND marked urgent",
+      "action": "Drop current task and address immediately",
+      "confidence": 0.95,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": "2025-07-24T18:52:32.590442",
+      "created_at": "2025-07-24T18:52:32.106930"
+    },
+    {
+      "id": "low_priority_batch",
+      "rule_type": "priority_rule",
+      "condition": "low priority task AND multiple similar tasks",
+      "action": "Batch with similar tasks for later processing",
+      "confidence": 0.7,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106931"
+    },
+    {
+      "id": "friend_social_request",
+      "rule_type": "relationship_rule",
+      "condition": "friend request AND social activity",
+      "action": "Accept if no major conflicts, suggest alternative if busy",
+      "confidence": 0.8,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106932"
+    },
+    {
+      "id": "boss_request_prioritize",
+      "rule_type": "relationship_rule",
+      "condition": "boss request AND not conflicting with other boss priorities",
+      "action": "Prioritize and provide timeline",
+      "confidence": 0.9,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106932"
+    },
+    {
+      "id": "low_energy_defer_complex",
+      "rule_type": "energy_based",
+      "condition": "low energy AND complex task",
+      "action": "Defer complex work to high energy time, do simple tasks",
+      "confidence": 0.85,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106933"
+    },
+    {
+      "id": "high_energy_tackle_hard",
+      "rule_type": "energy_based",
+      "condition": "high energy AND challenging task available",
+      "action": "Prioritize the challenging task while energy is high",
+      "confidence": 0.9,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106933"
+    },
+    {
+      "id": "quick_decision_threshold",
+      "rule_type": "pattern_match",
+      "condition": "decision time > 5 minutes AND low stakes",
+      "action": "Choose good enough option rather than optimize",
+      "confidence": 0.75,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106934"
+    },
+    {
+      "id": "email_batch_process",
+      "rule_type": "habit",
+      "condition": "multiple emails AND similar response needed",
+      "action": "Process in batch with template responses",
+      "confidence": 0.8,
+      "success_count": 0,
+      "failure_count": 0,
+      "last_used": null,
+      "created_at": "2025-07-24T18:52:32.106935"
+    }
+  ],
+  "last_updated": "2025-07-24T18:52:32.590453"
+}

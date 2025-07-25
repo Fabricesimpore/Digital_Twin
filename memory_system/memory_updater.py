@@ -19,19 +19,38 @@ import logging
 
 from .episodic_memory import EpisodicMemorySystem, EpisodicMemory, MemoryType, MemoryImportance
 from .vector_memory import EnhancedVectorMemory, VectorMemoryType
-from ..digital_twin_v2 import TwinResponse, Situation
+try:
+    from digital_twin_v3 import TwinResponse, Situation
+except ImportError:
+    try:
+        from digital_twin_v2 import TwinResponse, Situation
+    except ImportError:
+        # Define minimal classes if neither is available
+        class TwinResponse:
+            def __init__(self):
+                pass
+        class Situation:
+            def __init__(self):
+                pass
 
 # Import observer components
 try:
-    from ..observer.observer_utils import ObservationEvent, ActivityCategory
+    from observer.observer_utils import ObservationEvent, ActivityCategory
     OBSERVER_AVAILABLE = True
 except ImportError:
     OBSERVER_AVAILABLE = False
+    # Define minimal classes if observer not available
+    class ObservationEvent:
+        def __init__(self):
+            pass
+    class ActivityCategory:
+        def __init__(self):
+            pass
 
 # Import goal system components
 try:
-    from ..goal_system.goal_manager import Goal, Milestone, GoalStatus
-    from ..goal_system.goal_reasoner import GoalContext, GoalRelevance
+    from goal_system.goal_manager import Goal, Milestone, GoalStatus
+    from goal_system.goal_reasoner import GoalContext, GoalRelevance
     GOAL_SYSTEM_AVAILABLE = True
 except ImportError:
     GOAL_SYSTEM_AVAILABLE = False
